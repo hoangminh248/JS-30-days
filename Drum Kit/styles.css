@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    
+}
+kbd{
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: rgba(46, 49, 49, 0.747);
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-evenly;
+
+}
+.key{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.05s;
+    padding: 10px;
+    max-width:50px;
+    color: white;
+}
+.playing{
+    transform: scale(1.1);
+    border-color:#ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
+.sound{
+    font-size: 10px;
+    color:#ffc600;
+}
