@@ -1,0 +1,51 @@
+html{
+    margin: 0;
+
+}
+.clock{
+
+}
+.clock-face{
+    position: relative;
+    background-color: black;
+    height: 300px;
+    width:300px;
+    shape-outside: circle();
+    clip-path: circle();
+    margin: 0 auto;
+}
+.dot{
+    position: absolute;
+    top: 49%;
+    left: 47.5%;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    background-color: white;
+}
+.hand{
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    width: 50%;
+    height: 3%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+.second-hand{
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+.digital-clock{
+    display: flex;
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.hour,.second,.minute{
+    color:green;
+    font-weight: bold;
+    font-size: 30px;
+}
