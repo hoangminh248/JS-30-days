@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+}
+.panels{
+    height: 100vh;
+    display: flex;
+}
+.panel{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    display: flex;
+    transition: 
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+    ;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.panel > *{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex: 1 0 auto;
+    transition: transform 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+.panel.open{
+    font-size: 40px;
+    flex: 5;
+}
+.panel > *:first-child{
+    transform: translateY(-100%);
+}
+.panel.open-active > *:first-child{
+    transform: translateY(0);
+}
+.panel > *:last-child{
+    transform: translateY(100%);
+}
+.panel.open-active > *:last-child{
+    transform: translateY(0);
+}
+.panel1{
+    background-image: url(https://i.pinimg.com/564x/df/74/e6/df74e6212d394fb1a49ad5b52bd91ada.jpg);
+}
+.panel2{
+    background-image: url(https://i.pinimg.com/564x/1a/06/88/1a0688c95aed4ccf69bdf7ec09d21b8b.jpg);
+}
+.panel3{
+    background-image: url(https://i.pinimg.com/564x/6e/e2/d4/6ee2d44a88a749b2c0956c6e9b569524.jpg);
+}
+.panel4{
+    background-image: url(https://i.pinimg.com/564x/72/f0/36/72f03664b0de77675d68bba450a5a6fd.jpg);
+}
+.panel5{
+    background-image: url(https://i.pinimg.com/564x/00/92/ba/0092ba7053c652f8d8e0b423dd23286b.jpg)
+}
